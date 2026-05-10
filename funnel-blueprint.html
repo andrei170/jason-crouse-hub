@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Funnel Blueprint · For Jason · AG1</title>
+<meta name="description" content="Funnel Blueprint - built for Jason Crouse by AG1 Consulting.">
+<meta name="robots" content="noindex">
+<meta property="og:title" content="Funnel Blueprint · For Jason">
+<meta property="og:description" content="Part of the funnel audit + less-than-7-day install plan built for @saintsofflow by AG1 Consulting.">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<script defer data-domain="andrei170.github.io" src="https://plausible.io/js/script.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="docs.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-back"><span class="arrow">&larr;</span> Back to Hub</a>
+    <span class="nav-title">For Jason · AG1</span>
+  </div>
+</nav>
+
+<article class="doc">
+  <header class="doc-header">
+    <span class="doc-tag">Architecture</span>
+    <h1>Funnel Blueprint - Jason Crouse</h1>
+  </header>
+
+  
+<p><strong>Architecture deliverable</strong> · Full funnel diagram, phase mapping, tech stack, integration points.</p>
+<hr />
+<h2>Current State (Pre-Install)</h2>
+<pre><code>ENTRY POINTS
+├── @saintsofflow IG  ─────────────────────┐
+├── @saintsofflow Threads ─────────────────┤
+├── @saintsofflow YouTube long-form ───────┤
+├── linkedin.com/in/jasonbcrouse ──────────┤
+└── Direct (saintsofflow.com) ─────────────┘
+                              ↓
+                     LIVE WEBINAR PAGE
+                webinar.saintsofflow.com
+              (one-shot, no replay, no scarcity)
+                              ↓
+                  May 13 LIVE WEBINAR
+            The Big Three Mastery Workshop
+                              ↓
+                THE FLOW CODE APPLICATION
+                  (gated pricing, group)
+                              ↓
+                      THE FLOW CODE
+              13 weeks · Self / Love / Lead
+                              ↓
+                          GRADUATE
+                       (no next room)
+</code></pre>
+<p>The leaks: cold traffic between live events goes nowhere, non-applicants exit the funnel entirely, graduates have no upper-tier room to enter.</p>
+<hr />
+<h2>Target State (Post-Install)</h2>
+<pre><code>ENTRY POINTS
+├── @saintsofflow IG (organic + ads) ──────┐
+├── @saintsofflow Threads ─────────────────┤
+├── @saintsofflow YouTube ─────────────────┤
+├── LinkedIn ──────────────────────────────┤
+├── Cold ads (Phase 4) - Meta + YouTube ───┤
+└── Direct (saintsofflow.com) ─────────────┘
+                              ↓
+                    LINKTREE / BIO ROUTER
+                              ↓
+              ┌─── BIG THREE MASTERY REPLAY ────┐
+              │   evergreen, on-demand, opt-in  │
+              │   captures email + segments     │
+              └─────────────────┬───────────────┘
+                                ↓
+                  5-DAY COUNTDOWN EMAIL SEQUENCE
+                  (5 touches, soft pitch to Flow Code)
+                                ↓
+                     ┌──────────┴──────────┐
+                     ↓                     ↓
+              FLOW CODE APPLY        SELF PHASE TRIPWIRE
+              (existing path)        ($97-$197 standalone)
+                     ↓                     ↓
+              THE FLOW CODE         WARM-LIST RE-TARGET
+              13 weeks              (Flow Code 6-12 months later)
+                     ↓
+                 GRADUATE
+                     ↓
+              INNER CIRCLE INTEREST
+              (graduate-only invitation)
+                     ↓
+                INNER CIRCLE
+              12 months · $20K-$30K
+              cohort + retreats + 1:1
+
+PARALLEL TRACK
+LIVE WEBINAR (quarterly cadence, e.g. Aug, Nov, Feb)
+            → recorded → becomes next quarter's evergreen replay
+            → Live attendees enter same Flow Code application path
+</code></pre>
+<hr />
+<h2>Phase Mapping</h2>
+<table>
+<thead>
+<tr>
+<th>Asset</th>
+<th>Phase</th>
+<th>Owner</th>
+<th>Tool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Big Three Mastery replay landing page</td>
+<td>1</td>
+<td>AG1</td>
+<td>Squarespace section + custom HTML</td>
+</tr>
+<tr>
+<td>Webinar recording capture (May 13 live)</td>
+<td>1</td>
+<td>Jason + AG1</td>
+<td>Riverside or Wistia recording</td>
+</tr>
+<tr>
+<td>5-day countdown timer</td>
+<td>1</td>
+<td>AG1</td>
+<td>Deadline Funnel</td>
+</tr>
+<tr>
+<td>5-touch replay email sequence</td>
+<td>1</td>
+<td>AG1</td>
+<td>Kit / ConvertKit (or Kajabi)</td>
+</tr>
+<tr>
+<td>Stripe + payment routing for Self Phase</td>
+<td>1</td>
+<td>AG1</td>
+<td>Stripe</td>
+</tr>
+<tr>
+<td>Pixel + GA4 + retargeting tags</td>
+<td>1</td>
+<td>AG1</td>
+<td>Meta Pixel + GA4 + GTM</td>
+</tr>
+<tr>
+<td>Self Phase standalone landing page</td>
+<td>2</td>
+<td>AG1</td>
+<td>Custom HTML hosted alongside replay</td>
+</tr>
+<tr>
+<td>Self Phase content packaging (existing footage)</td>
+<td>2</td>
+<td>Jason + AG1</td>
+<td>Existing Flow Code Self phase video</td>
+</tr>
+<tr>
+<td>Bio link router</td>
+<td>2</td>
+<td>AG1</td>
+<td>Linktree (Pro) or Beacons</td>
+</tr>
+<tr>
+<td>Inner Circle landing page (graduate-only)</td>
+<td>2</td>
+<td>AG1</td>
+<td>Hidden URL, invite-only</td>
+</tr>
+<tr>
+<td>Inner Circle application form</td>
+<td>2</td>
+<td>AG1</td>
+<td>Typeform (private link)</td>
+</tr>
+<tr>
+<td>Photoshoot + B-roll</td>
+<td>3</td>
+<td>AG1 + photographer</td>
+<td>Local studio + outdoor location</td>
+</tr>
+<tr>
+<td>Hook bank + content calendar</td>
+<td>3</td>
+<td>AG1 + Jason</td>
+<td>Notion + Frame.io</td>
+</tr>
+<tr>
+<td>Podcast pivot - Flow Code Field Notes</td>
+<td>3</td>
+<td>AG1 + Jason</td>
+<td>Riverside + Final Cut Pro</td>
+</tr>
+<tr>
+<td>Meta + YouTube ads to evergreen replay</td>
+<td>4</td>
+<td>AG1</td>
+<td>Meta Ads Manager + Google Ads</td>
+</tr>
+<tr>
+<td>Retargeting campaigns</td>
+<td>4</td>
+<td>AG1</td>
+<td>Meta + Google + GTM</td>
+</tr>
+<tr>
+<td>Lookalike audiences</td>
+<td>4</td>
+<td>AG1</td>
+<td>Meta CAPI + audience builder</td>
+</tr>
+</tbody>
+</table>
+<h2>Tech Stack (recommended, swappable)</h2>
+<ul>
+<li><strong>Site host:</strong> Squarespace (existing - keep) for saintsofflow.com main; custom HTML hosted on subdomain for landing pages that need control</li>
+<li><strong>Course / Tripwire host:</strong> Kajabi (preferred for solo coach simplicity) or Teachable</li>
+<li><strong>Email:</strong> Kit / ConvertKit (preferred for personal-development audiences) or Kajabi-native</li>
+<li><strong>Replay countdown:</strong> Deadline Funnel (preferred) or evergreen-launching plugin</li>
+<li><strong>Payment:</strong> Stripe (Self Phase) + bank wire / Stripe Invoice (Inner Circle high-ticket)</li>
+<li><strong>Video host:</strong> Wistia (replay + tripwire) + YouTube (long-form) + Loom (1:1 voice messages for Inner Circle)</li>
+<li><strong>Analytics:</strong> GA4 + Meta Pixel + Microsoft Clarity (heatmaps)</li>
+<li><strong>CRM:</strong> GHL (preferred for cohort fill) or Kajabi-native</li>
+<li><strong>Community / Inner Circle:</strong> Slack or Telegram (Inner Circle private channel) + existing community for Flow Code</li>
+<li><strong>Scheduling:</strong> Calendly (default) for Inner Circle 1:1 calls</li>
+<li><strong>Project / build:</strong> Notion (handover-friendly) + Linear (engineering)</li>
+</ul>
+<h2>Integration Points</h2>
+<ol>
+<li>Replay opt-in → Email · landing-page form triggers Kit on submit, kicks off 5-touch countdown sequence</li>
+<li>Email → Application · Kit triggers route to Flow Code application form on day 5 of sequence</li>
+<li>Email → Self Phase · non-applicants on day 6 routed to Self Phase tripwire landing</li>
+<li>Self Phase purchase → Email · Stripe webhook triggers Kit "Self Phase graduate" tag for 6-month re-target</li>
+<li>Flow Code graduation → Inner Circle invitation · Kajabi or GHL completion event triggers private Inner Circle invitation email</li>
+<li>Live webinar (next quarterly cadence) → Recording → New evergreen replay</li>
+<li>All events → GA4 + Meta Pixel via GTM</li>
+</ol>
+<h2>Owner Map</h2>
+<ul>
+<li><strong>Jason:</strong> filming the live webinar (May 13 + quarterly thereafter), Inner Circle 1:1 calls and group coaching, Self Phase optional group call (if $197 tier), top-line decisions on copy + brand</li>
+<li><strong>AG1 (Andrei):</strong> everything else - replay funnel build, Self Phase landing + checkout, Inner Circle landing + application, email sequences, automation setup, ad management, weekly reporting</li>
+</ul>
+<h2>Failure Modes + Mitigations</h2>
+<ul>
+<li><strong>May 13 recording quality issues</strong> → backup recording on second device + Riverside cloud capture; AG1 owns post-production</li>
+<li><strong>Squarespace landing-page constraints</strong> → if Squarespace can't host the replay countdown cleanly, deploy custom HTML on a subdomain (e.g. replay.saintsofflow.com)</li>
+<li><strong>Inner Circle first-cohort fill below 6</strong> → run a 90-day "founding members" pricing window for graduates who book by a soft deadline; minimum cohort = 4</li>
+<li><strong>Self Phase content cannibalising Flow Code</strong> → tripwire stays at 5 weeks of Self only; Love and Lead phases stay program-exclusive</li>
+</ul>
+<h2>KPIs (90-day)</h2>
+<ul>
+<li>Phase 1 · Big Three Mastery replay funnel live · 200+ opt-ins in first 30 days</li>
+<li>Phase 2 · Self Phase tripwire converting at 5-15% of replay non-applicants · Inner Circle interest list at 25+ graduates</li>
+<li>Phase 3 · 40+ short-form posts shipped · 6 long-form podcast episodes published</li>
+<li>Phase 4 · Meta CPL under $30 · ROAS 3x by week 12</li>
+<li>Year-1 floor target · $260,000-$530,000 incremental on top of existing Flow Code revenue</li>
+</ul>
+
+  <footer class="doc-footer">
+    <a href="index.html" class="doc-footer-link">Back to Hub</a>
+    <div class="doc-meta">Prepared 2026-05-10 &middot; Built for @saintsofflow</div>
+  </footer>
+</article>
+
+</body>
+</html>
